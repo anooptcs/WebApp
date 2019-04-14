@@ -31,13 +31,6 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
-		<dependency>
-		    <groupId>org.codehaus.mojo</groupId>
-		    <artifactId>sonar-maven-plugin</artifactId>
-		    <version>2.6</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
 		<dependency>
 			<groupId>org.mockito</groupId>
@@ -76,13 +69,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
-			  <plugin>
-			   <groupId>org.codehaus.mojo</groupId>
-			   <artifactId>sonar-maven-plugin</artifactId>
-			   <version>2.6</version>
-			  </plugin>
-
 			<plugin>
 				 <!-- Add/update this in tomcat-home/conf/tomcat-users.xml file
 					<role rolename="manager-gui" />
@@ -151,13 +137,13 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
-			<properties>
+		<properties>
 				<sonar.jdbc.url>jdbc:postgresql://3.19.57.171/sonar</sonar.jdbc.url>
 				<sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
 				<sonar.jdbc.username>admin</sonar.jdbc.username>
 				<sonar.jdbc.password>admin</sonar.jdbc.password>
 				<!-- SERVER ON A REMOTE HOST -->
-				<sonar.host.url>http://3.19.57.171:9000</sonar.host.url>
+				<sonar.host.url>http://3.19.57.171:9000</sonar.host.url>		
 			</properties>
 		</profile>
 		<profile>
